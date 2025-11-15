@@ -16,11 +16,11 @@
       }
     </style>
 </head>
-<button onclick="document.querySelector('audio').play()">播放音乐</button>
-<body>
 
+<body>
   <main>
-    <audio src="music\1.mp3" autoplay="autoplay" loop="loop"></audio>
+    <audio id="bgm" src="music/1.mp3" loop></audio>  <!-- 增加id方便选中 -->
+    <button onclick="document.getElementById('bgm').play()">播放音乐</button>  <!-- 用id选中更可靠 -->
     <div class="Birthday"> Michael&nbsp;&nbsp;&nbsp;生日快乐!</div>
   <ul class="star" style="--v: 1; --t: 1;">
     <li style="--i: 0"></li>
